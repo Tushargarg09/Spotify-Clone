@@ -1,28 +1,3 @@
-// import { useState } from 'react';
-// import SearchBar from '../components/SearchBar';
-// import SongCard from '../components/SongCard';
-
-// export default function Search() {
-//   const [results, setResults] = useState([]);
-
-//   const handleSearch = async (query) => {
-//     const res = await fetch(`https://shazam.p.rapidapi.com/search?term=${query}`, {
-//       headers: {
-//         'X-RapidAPI-Key': 'YOUR_API_KEY',
-//         'X-RapidAPI-Host': 'shazam.p.rapidapi.com'
-//       }
-//     });
-//     const data = await res.json();
-//     setResults(data.tracks?.hits?.map(hit => hit.track));
-//   };
-
-//   return (
-//     <div className="p-4">
-//       <SearchBar onSearch={handleSearch} />
-//       {results?.map((song) => <SongCard key={song.key} song={song} />)}
-//     </div>
-//   );
-// }
 import { useState } from 'react';
 import mockSongs from '../data/mockSongs';
 import SongCard from '../components/SongCard';

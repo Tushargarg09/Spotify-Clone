@@ -4,6 +4,9 @@ import Home from './pages/Home';
 import Search from './pages/Search';
 import MusicPlayer from './components/MusicPlayer';
 import Playlists from './pages/Playlists';
+import mockSongs from './data/mockSongs';
+import Genres from './pages/Genres';
+import GenreSongs from './pages/GenreSongs';
 
 export default function App() {
   return (
@@ -16,11 +19,15 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/search" element={<Search />} />
               <Route path="/playlists" element={<Playlists />} />
+              <Route path="/genres" element={<Genres />} />
+              <Route path="/genres/:genreId" element={<GenreSongs />} />
+
             </Routes>
           </main>
 
           <div className="bg-neutral-900 p-4 border-t border-neutral-700">
-            <MusicPlayer />
+            <MusicPlayer songs={mockSongs} />
+
           </div>
         </div>
       </div>

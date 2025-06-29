@@ -8,6 +8,7 @@ export default function Sidebar() {
     <Link to="/" className="hover:text-spotify">Home</Link>
     <Link to="/search" className="hover:text-spotify">Search</Link>
     <Link to="/playlists" className="hover:text-spotify">Playlists</Link>
+    <Link to="/genres" className="hover:text-green-400">Genres</Link>
   </nav>
 </div>
 
